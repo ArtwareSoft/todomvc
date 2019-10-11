@@ -1,0 +1,22 @@
+{
+  "name": "todomvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtwareSoft/todomvc.git"
+  },
+  "author": "Shai Ben-Yehuda <shaiby@artwaresoft.com> (http://artwaresoft.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtwareSoft/todomvc/issues"
+  },
+  "homepage": "https://github.com/ArtwareSoft/todomvc#readme",
+  "dependencies": {
+    "jb-react": "^0.4.14"
+  }
+}
