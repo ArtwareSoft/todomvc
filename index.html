@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript">
-    startTime = new Date().getTime();
-  </script>
-<!-- start-jb-scripts -->
-      <link rel="stylesheet" href="todomvc.css" charset="utf-8">
-
-      <script type="text/javascript" src="//unpkg.com/jb-react/dist/jb-react-all.js"></script>
-      <script type="text/javascript" src="todomvc.js"></script>
-<!-- end-jb-scripts -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>דוגמאות לחדרים</title>
+  <link rel="icon" href="//jbartlib.appspot.com/images/LetMeSee/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="//jbartlib.appspot.com/images/LetMeSee/128x128.png"/>
+  <script>window.jbStartLoadingTime = new Date().getTime(); window.jbWidgetJSUrl = '//jbartlib.storage.googleapis.com/apps/LetMeSee/20-11-14/jbart_LetMeSee_src.js';</script>
+  <link rel="stylesheet" type="text/css" href="//jb-letmesee.appspot.com/letmesee_loading.css?v=10" />
 </head>
-<body>
-<div id="main"> </div>
-<script>
-  jb.ui.renderWidget({$:'todomvc.main'},document.getElementById('main'))
-</script>
-</body>
+<body style="margin:0;-webkit-text-size-adjust:none;">
+  <div id="placeholder"></div>
+  <div id="ajaxart_loading" class="visitor">
+    <div id="lmc_vloading_progress"></div>
+    <div id="lmc_vloading_image"></div>
+    <div id="lmc_vloading_text"></div>
+    <div id="lmc_vloading_error"></div>
+    <div id="lmc_vloading_footer_text"></div>
+  </div>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    window.jbPreloadLogs = window.jbPreloadLogs || [];
+
+    window.jbLMCVersion = '20-11-14';
+    window.jbLMCDriveID = '';
+    window.jbStartLMC = function() {
+      jBartWidgets.LetMeSee.show(document.getElementById('placeholder'),{ 
+        page: 'main', 
+        jbartdb_server: '//jbartwix1.appspot.com',
+        data: {
+          Project: '<project id="bmbqji1boc" />',
+          Room: '<room />',
+          RoomHeaders: '<rooms />',
+          FullRooms: '<rooms />',
+          Temp: '<xml/>',
+          CoBrowseSide: 'visitor',
+          EmbedConfig: '<xml/>'          
+        }
+      } );
+      $('#ajaxart_loading').remove();
+    }
+  </script>
+  <script type="text/javascript" src="//jb-letmesee.appspot.com/lmc_loadVisitorAndCheckErrors.js?v=2"></script>
+</body> 
 </html>
